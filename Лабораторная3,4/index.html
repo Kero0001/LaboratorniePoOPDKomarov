@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертор валют</title>
+</head>
+<body>
+
+    <h1>Конвертор курсов валют</h1>
+
+    <!-- novalidate отключает проверку браузера -->
+    <form action="" method="post" novalidate>
+
+        <p>Введите сумму:</p>
+	<input type="number" name="amount" step="any">
+
+        <p>Из какой валюты:</p>
+        <select name="from_currency">
+            <option value="USD">Доллар</option>
+            <option value="RUB">Рубли</option>
+            <option value="KZT">Тенге</option>
+            <option value="EUR">Евро</option>
+        </select>
+
+        <p>В какую валюту:</p>
+        <select name="to_currency">
+            <option value="USD">Доллар</option>
+            <option value="RUB">Рубли</option>
+            <option value="KZT">Тенге</option>
+            <option value="EUR">Евро</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Конвертировать">
+    </form>
+
+    <h2>{{ ans }}</h2>
+
+</body>
+</html>
